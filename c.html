@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Log-in</title>
+  
+  
+      <link rel="stylesheet" type="text/css" href="new1.css">
+
+  
+</head>
+<body>
+<script>
+function validateform()
+{
+var name=document.myform.user.value;
+var password=document.myform.pass.value;
+
+if(name === null || name === "")
+{
+alert("Name should not be blank");
+return false;
+}
+
+if(password.length<6)
+{
+alert("Password must be atleast 6 charater length");
+return false;
+}
+
+}
+</script>
+
+
+<body >
+    
+  <div class="login-card">
+    <h1>Admin Log-in</h1><br>
+  <form name="myform" method="post" onsubmit="return validateform()">
+    <input type="text" name="user" placeholder="Username">
+    <input type="password" name="pass" placeholder="Password">
+    <input type="submit" name="Login" class="login login-submit" value="Login">
+  </form>
+    
+  </div>
+</div>
+</body>
+</html>
